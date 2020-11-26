@@ -1,0 +1,14 @@
+version: '3'
+services:
+  jupyter:
+    container_name: jupyter_notebook
+    environment:
+      - JUPYTER_ENABLE_LAB=1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - 8888:8888/tcp
+    volumes:
+    - .:/home/jovyan:rw
+   

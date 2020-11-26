@@ -1,0 +1,10 @@
+sympy
+galgebra
+chempy
+
+pytest
+
+control
+slycot
+
+opencv-python
